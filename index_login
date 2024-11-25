@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WellWeb Log-in</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"> </script>
+
+<style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .full-screen {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex flex-col lg:flex-row h-screen w-screen">
+        <div class="lg:w-1/2 w-full bg-gradient-to-r from-blue-900 to-purple-900 text-white p-6 lg:p-10 flex flex-col justify-between">            <div>
+                <div class="mb-8">
+                    <img src="https://storage.googleapis.com/a1aa/image/oNOe4rzupAWvekoTx5nT6vPXR09ijgt6dgP4SVFMxPQqwP0TA.jpg" alt="WellWeb Logo" class="mb-4 w-12 h-12">
+                    <p class="text-sm lg:text-lg">WellWeb is a total gamechanger for us. I love that it allows us to respond to customers faster without any email getting buried in a silo.</p>
+                </div>
+                <div class="flex items-center mb-8">
+                    <img src="https://storage.googleapis.com/a1aa/image/gQnnJPMvQFqOM1pbeIp3ZF5jCfp2bFUcV6X2NzWiyHIegfQPB.jpg" alt="Clarisse Mercado" class="rounded-full w-10 h-10 mr-4">
+                    <div>
+                        <p class="font-bold text-sm lg:text-base">Clarisse Mercado</p>
+                        <p class="text-xs lg:text-sm">Co-founder, Bacolod City<br>ASC Group</p>
+                    </div>
+                </div>
+                <div class="flex space-x-2 mb-8">
+                    <div class="w-8 h-1 bg-white"></div>
+                    <div class="w-8 h-1 bg-gray-400"></div>
+                    <div class="w-8 h-1 bg-green-400"></div>
+                </div>
+            </div>
+            <div>
+                <p class="text-xs lg:text-sm mb-4">Trusted by over 100 companies</p>
+                <div class="grid grid-cols-3 gap-2 lg:gap-4">
+                    <img src="https://storage.googleapis.com/a1aa/image/zc2wm2P2I2YfMC4tFQyiAnidnzsklHYTnifDnfSNhluFhfQPB.jpg" alt="Upwork Logo" class="w-12 h-12">
+                    <img src="https://storage.googleapis.com/a1aa/image/VHIPvqeTalXrBStHBLGK76uiw48ed2ucbmKARlJ4F3KvwP0TA.jpg" alt="Harvard University Logo" class="w-12 h-12">
+                    <img src="https://storage.googleapis.com/a1aa/image/IreTegfwk4AB9JOxfeWNGNVh0h4isx3iRYizEVe4FWgbL8D9E.jpg" alt="Vacasa Logo" class="w-12 h-12">
+                    <img src="https://storage.googleapis.com/a1aa/image/zc2wm2P2I2YfMC4tFQyiAnidnzsklHYTnifDnfSNhluFhfQPB.jpg" alt="Upwork Logo" class="w-12 h-12">
+                    <img src="https://storage.googleapis.com/a1aa/image/VHIPvqeTalXrBStHBLGK76uiw48ed2ucbmKARlJ4F3KvwP0TA.jpg" alt="Harvard University Logo" class="w-12 h-12">
+                    <img src="https://storage.googleapis.com/a1aa/image/IreTegfwk4AB9JOxfeWNGNVh0h4isx3iRYizEVe4FWgbL8D9E.jpg" alt="Vacasa Logo" class="w-12 h-12">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right -->
+        <div class="lg:w-1/2 w-full bg-white p-6 lg:p-10 flex flex-col justify-center">            <div class="max-w-md mx-auto">
+                <div class="mb-8 text-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/oNOe4rzupAWvekoTx5nT6vPXR09ijgt6dgP4SVFMxPQqwP0TA.jpg" alt="WellWeb Logo" class="mx-auto mb-4 w-12 h-12">
+                    <h1 class="text-lg lg:text-2xl font-bold">Let’s get started</h1>
+                    <p class="text-gray-600 text-sm lg:text-base">Create an account using your email</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-8">
+                    <button class="bg-white border border-gray-300 text-gray-600 py-2 px-2 rounded text-xs lg:text-sm flex items-center justify-center">
+                        <i class="fab fa-facebook mr-2"></i> Facebook
+                    </button>
+                    <button class="bg-white border border-gray-300 text-gray-600 py-2 px-2 rounded text-xs lg:text-sm flex items-center justify-center">
+                        <i class="fab fa-google mr-2"></i> Google
+                    </button>
+                    <button class="bg-white border border-gray-300 text-gray-600 py-2 px-2 rounded text-xs lg:text-sm flex items-center justify-center">
+                        <i class="fab fa-apple mr-2"></i> Apple
+                    </button>
+                </div>
+                <form action="register.php" method="POST">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm lg:text-base">Username / Email *</label>
+                        <input class="w-full border border-gray-300 p-2 rounded text-sm lg:text-base" type="text" name="username" placeholder="Enter Here*" required>
+                    </div>ss
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm lg:text-base">Mobile Number *</label>
+                        <div class="flex">
+                            <select class="border border-gray-300 p-2 rounded-l text-sm lg:text-base" name="country">
+                                <option>Philippine</option>
+                            </select>
+                            <input class="w-full border border-gray-300 p-2 rounded-r text-sm lg:text-base" type="text" name="mobile" placeholder="+69" required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm lg:text-base">Password *</label>
+                        <input class="w-full border border-gray-300 p-2 rounded text-sm lg:text-base" type="password" name="password" placeholder="Buuyuanqeegna8" required>
+                    </div>
+                    <button class="w-full bg-black text-white py-2 rounded text-sm lg:text-base" type="submit">LOG IN</button>
+                </form>
+                <p class="text-gray-600 text-xs lg:text-sm mt-4">By clicking "Log In" you agree to our <a href="#" class="text-blue-500">Terms</a> and that you have read our <a href="#" class="text-blue-500">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
