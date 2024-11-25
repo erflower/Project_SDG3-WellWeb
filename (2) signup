@@ -1,1 +1,126 @@
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellWeb Sign-in</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .full-screen {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex h-screen w-screen">
+        <div class="w-1/2 bg-gradient-to-r from-blue-700 to-purple-600 text-white p-10 flex flex-col justify-between">            <div>
+                <div class="mb-8">
+                    <img src="https://storage.googleapis.com/a1aa/image/7HGo733rYi6vLxGjzQozvEIvT9fPxewL9nawpYjxpMB8VP0TA.jpg" alt="WellWeb Logo" class="mb-4" width="50" height="50">
+                    <p class="text-lg">WellWeb is a total gamechanger for us. I love that it allows us to respond to customers faster without any email getting buried in a silo.</p>
+                </div>
+                <div class="flex items-center mt-8">
+                    <img src="https://storage.googleapis.com/a1aa/image/ZKqfePYDFWrxa0Cejd3xN0RzWNLRkuQGqgz2mpAvDQOvseQPB.jpg" alt="Clarisse Mercado" class="rounded-full w-12 h-12 mr-4" width="50" height="50">
+                    <div>
+                        <p class="font-semibold">Clarisse Mercado</p>
+                        <p class="text-sm">Co-founder, Bacolod City<br>ASC Group</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8">
+                <div class="flex space-x-2 mb-4">
+                    <div class="w-8 h-1 bg-white rounded-full"></div>
+                    <div class="w-8 h-1 bg-white rounded-full opacity-50"></div>
+                    <div class="w-8 h-1 bg-white rounded-full opacity-50"></div>
+                    <div class="w-8 h-1 bg-white rounded-full opacity-50"></div>
+                </div>
+                <p class="text-sm">Trusted by over 100 companies</p>
+                <div class="grid grid-cols-3 gap-4 mt-4">
+                    <img src="https://storage.googleapis.com/a1aa/image/0XuBLedclevdNUMZqWDbY6OaNx5vBC7ikGXzpiehJ8YbseQPB.jpg" alt="Upwork Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/tW3xxvFLki4LPF3zqBSa6O5VXhJ7NaajjPVa2tsWMNfErH6JA.jpg" alt="Harvard University Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/U6KOmujfZFyfEEJPh8ysZj6KyBB0sWtclpCNqRFMUb4KWP0TA.jpg" alt="Vacasa Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/4eZXpTscielYOExXYWeOWkwwpSGbefgXf3qD2Z56jdpNk1D9E.jpg" alt="Kiwi.com Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/gAwBBrZyyM77L9SyxLiCBYZBGupiLWmwEPWwuucwlW9eqH6JA.jpg" alt="Funding Circle Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/1hQ3vDHb2DY1ERLelSudowqpeLmoyFxxV4oaYLxNgxyTWP0TA.jpg" alt="Gong Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/U5EZr7uJp8bWKZ9mgg0dnXPnWQyOgGQxoTPVKm9IWBug1D9E.jpg" alt="NYU Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/Sk0Hjwu715IGLREdKWsNnizLWBzRMxIG5Ta1KIia3jffVP0TA.jpg" alt="Flexport Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/c5xm5GhkHfz8Ay4ewkXkzXyCI4gEzyzYPP8chWM09QmHWP0TA.jpg" alt="Pluralsight Logo" width="50" height="50">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="w-1/2 bg-white p-10 flex flex-col justify-center">            
+            <div class="max-w-md mx-auto">                
+                <div class="mb-8 text-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/7HGo733rYi6vLxGjzQozvEIvT9fPxewL9nawpYjxpMB8VP0TA.jpg" alt="WellWeb Logo" class="mb-4 mx-auto" width="50" height="50">
+                    <h1 class="text-3xl font-bold mb-2">Let's get started</h1>
+                    <p class="text-gray-600">Create an account using your email</p>
+                </div>
+                <div class="flex justify-center space-x-4 mb-6">
+                    <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-md shadow-sm hover:bg-gray-50">
+                        <i class="fab fa-facebook mr-2"></i> Sign up with Facebook
+                    </button>
+                    <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-md shadow-sm hover:bg-gray-50">
+                        <i class="fab fa-google mr-2"></i> Sign up with Google
+                    </button>
+                    <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-md shadow-sm hover:bg-gray-50">
+                        <i class="fab fa-apple mr-2"></i> Sign up with Apple Account
+                    </button>
+                </div>
+                <form action="register.php" method="POST">
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Name*</label>
+                        <input class="w-full border border-gray-300 p-2 rounded-md" type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Phone Number*</label>
+                        <div class="flex">
+                            <select class="border border-gray-300 p-2 rounded-l-md" name="country">
+                                <option>Philippines</option>
+                            </select>
+                            <input class="w-full border border-gray-300 p-2 rounded-r-md" type="text" name="phone" placeholder="+69" required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Email *</label>
+                        <input class="w-full border border-gray-300 p-2 rounded-md" type="email" name="email" placeholder="angeyu@gmail.com" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Username *</label>
+                        <input class="w-full border border-gray-300 p-2 rounded-md" type="text" name="username" placeholder="ange_yuu" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700">Password *</label>
+                        <input class="w-full border border-gray-300 p-2 rounded-md" type="password" name="password" placeholder="Buyyuangeegna8" required>
+                    </div>
+                    <button class="w-full bg-black text-white py-2 px-4 rounded-md" type="submit">GET WELLWEB FREE</button>
+                </form>
+                <p class="text-gray-600 text-sm mt-4">By clicking "Get Started Free" you agree to our <a href="#" class="text-blue-600">Terms</a> and that you have read our <a href="#" class="text-blue-600">Privacy Policy</a></p>
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 text-sm">Already have an account? <a href="#" class="text-blue-600">Log in</a></p>
+                </div>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <img src="https://storage.googleapis.com/a1aa/image/8cmSePV19x1CbyExd52CFE4p9JffjSgxeB4OPrQTaizrX9QPB.jpg" alt="AICPA SOC Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/FidoYtasufUpQqCX0V5GVJApDURXyUehw50dayWf77WLseQPB.jpg" alt="Top 100 Logo" width="50" height="50">
+                    <img src="https://storage.googleapis.com/a1aa/image/twucKp8YsW4uFZQPHj4RzYSyi3cIlxPkDkrrTeTb9xxKrH6JA.jpg" alt="ISO Logo" width="50" height="50">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
