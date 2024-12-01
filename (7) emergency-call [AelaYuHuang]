@@ -2,13 +2,23 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Emergency Call - WellWeb
-  </title>
+  <title> Emergency Call - WellWeb </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <style>
    body {
             font-family: 'Inter', sans-serif;
@@ -54,32 +64,142 @@
             text-align: center;
         }
   </style>
- </head>
- <body class="bg-white">
-  <header class="flex justify-between items-center p-4 border-b border-gray-200">
-   <div class="flex items-center space-x-4">
-    <h1 class="text-2xl font-bold text-blue-600">
-     WellWeb
-    </h1>
-    <nav class="space-x-4">
-     <a class="text-gray-600 hover:text-gray-800" href="#">
-      About Us
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#">
-      Home
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#">
-      Account
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#">
-      Plan
-     </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header">
+    <div class="logo">
+        <a href="#">WellWeb</a>
+    </div>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="profile.html">Account</a></li>
+        </ul>
     </nav>
-   </div>
-   <button class="bg-blue-600 text-white px-4 py-2 rounded">
-    Log-out
-   </button>
-  </header>
+            <div class="user-actions">
+            <a href="index_log-in.html" class="btn btn-primary">Log-out</a>
+            </div>
+</header>
+    
+<style>
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+    }
+            
+    .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        text-decoration: none;
+    }
+            
+    .main-nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+            
+    .main-nav ul li {
+        margin-left: 1.5rem;
+    }
+            
+    .main-nav ul li a {
+        color: #2c3e50;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+            
+    .main-nav ul li a:hover {
+        color: #3498db;
+    }
+            
+    .user-actions .btn {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+            
+    .user-actions .btn-primary {
+        background-color: #3498db;
+        color: #fff;
+    }
+            
+    .user-actions .btn-primary:hover {
+        background-color: #2980b9;
+    }
+</style>
+
+
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    .scrolling-wrapper {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .scrolling-wrapper {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrolling-wrapper img {
+        min-width: 100px;
+        margin-right: 10px;
+    }
+    .scrolling-wrapper div {
+        min-width: 300px;
+        margin-right: 10px;
+    }
+</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <main class="p-8">
    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
     <div class="bg-red-600 p-4">
@@ -145,11 +265,209 @@
     </div>
    </div>
   </main>
-  <footer class="p-4 border-t border-gray-200">
-   <div class="text-center text-gray-600">
-    © 2023 WellWeb. All rights reserved.
-   </div>
-  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Plan</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Partners</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Developer Guides</a></li>
+            <li><a href="#">WellWeb Academy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>More</h4>
+            <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit" ><i class="fas fa-arrow-right"></i> </button>
+            </div>
+
+        <div class="footer-bottom">
+        
+        <p>&copy; 2024 WellWeb by: AngeSpensClar Group < 3 | All rights reserved.</p>
+
+    </div>
+</footer>
+
+<style>
+.site-footer {
+    background-color: #07225c;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+    
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+        
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+        
+        .footer-section h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #3498db;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .social-icon {
+            color: #fff;
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            color: #3498db;
+        }
+        
+        .newsletter {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .newsletter input {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 14px;
+        }
+        
+        .newsletter button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .newsletter button:hover {
+            background-color: #2980b9;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+        }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script>
    let countdownInterval;
 
