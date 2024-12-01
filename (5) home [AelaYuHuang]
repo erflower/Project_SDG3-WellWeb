@@ -2,7 +2,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellWeb by: ASC <3</title>
+    <title>WellWeb by: ASC </title>
 
 
 
@@ -29,13 +29,13 @@
         
         <nav class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Account</a></li>
+                <li><a href="profile.html">Account</a></li>
             </ul>
         </nav>
                 <div class="user-actions">
-                <a href="#" class="btn btn-primary">Log-out</a>
+                <a href="index_log-in.html" class="btn btn-primary">Log-out</a>
                 </div>
     </header>
         
@@ -54,6 +54,7 @@
             font-weight: bold;
             color: #2c3e50;
             text-decoration: none;
+            
         }
                 
         .main-nav ul {
@@ -141,7 +142,7 @@
     <main class="flex flex-col lg:flex-row">
         <div class="lg:w-2/3 p-8">
             <div class="bg-blue-600 text-white p-8 rounded-lg mb-8">
-                <h2 class="text-4xl font-bold mb-4">Unblock your knowledge.</h2>
+                <h2 class="text-4xl font-bold mb-4">Unlock your knowledge.</h2>
                 <p class="mb-4">Everything you need, we provide</p>
                 <div class="flex space-x-4">
                     <input class="p-2 rounded text-gray-800 w-full" id="search-input" placeholder="Enter Here" type="text"/>
@@ -154,8 +155,8 @@
                     <div class="flex items-center space-x-2">
                         <img alt="Profile picture of Kevin Lee" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/kdUP124Bl3roLFZjfGOoe1fcQzJNhjhcFslCsqfxqYrVfHqeE.jpg" width="40"/>
                         <div>
-                            <p class="font-bold">Ange Uy</p>
-                            <p class="text-sm">Founder, ASC Group</p>
+                            <p class="font-bold">Clarisse Meracdo</p>
+                            <p class="text-sm">Co-Founder, ASC Group</p>
                         </div>
                     </div>
                 </div>
@@ -163,49 +164,49 @@
                     <p class="mb-4">We're rapidly scaling and constantly understaffed. Air is one of the few tools that can benefit the entire organization.</p>
                     <div class="flex items-center space-x-2">
                         <img alt="Profile picture of Nancy Smith" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/xkNSWhfqQwVxSafY4rNpgdhjSEuBJVnsc8iu5Vv76GEyfhqnA.jpg" width="40"/>
-                        <div>
-                            <p class="font-bold">Clarisse Mercado</p>
-                            <p class="text-sm">Co-Founder, ASC Group</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-green-200 text-gray-800 p-4 rounded-lg w-1/3 min-w-[300px]">
-                    <p class="mb-4">We run our entire creative process on Air, from planning our social posts to deciding what assets to use for an ad campaign.</p>
-                    <div class="flex items-center space-x-2">
-                        <img alt="Profile picture of Cody Levine" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/QV9SmITbFTLBGZObeAjg3dlqUfg1tvBj8dheXfyL0i6RfHqeE.jpg" width="40"/>
                         <div>
                             <p class="font-bold">Spencer Milano</p>
                             <p class="text-sm">Co-Founder, ASC Group</p>
                         </div>
                     </div>
                 </div>
+                <div class="bg-green-200 text-gray-800 p-4 rounded-lg w-1/3 min-w-[300px]">
+                    <p class="mb-4">We run our entire creative process on Air, from planning our social posts to deciding what assets to use for an ad campaign.</p>
+                    <div class="flex items-center space-x-2">
+                        <img alt="Profile picture of Cody Levine" class="rounded-full" height="40" src="images/ange-uy.jpg" width="40"/>
+                        <div>
+                            <p class="font-bold">Ange Uy</p>
+                            <p class="text-sm">Founder, ASC Group</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="bg-orange-500 text-white p-4 rounded-lg w-1/3 min-w-[300px]">
                     <p class="mb-4">Organizing creative assets in Drive became a nightmare. We switched to Air and it's so much easier. Highly recommend.</p>
                     <div class="flex items-center space-x-2">
-                        <img alt="Profile picture of Kevin Lee" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/kdUP124Bl3roLFZjfGOoe1fcQzJNhjhcFslCsqfxqYrVfHqeE.jpg" width="40"/>
+                        <img alt="Profile picture of Kevin Lee" class="rounded-full" height="40" src="images/karina-yoo.jpg" width="40"/>
                         <div>
-                            <p class="font-bold">Who u?</p>
-                            <p class="text-sm">Co-Founder, immi</p>
+                            <p class="font-bold">Karina Yoo</p>
+                            <p class="text-sm">CMO, ASC Group</p>
                         </div>
                     </div>
                 </div>
                 <div class="bg-gray-200 text-gray-800 p-4 rounded-lg w-1/3 min-w-[300px]">
                     <p class="mb-4">We're rapidly scaling and constantly understaffed. Air is one of the few tools that can benefit the entire organization.</p>
                     <div class="flex items-center space-x-2">
-                        <img alt="Profile picture of Nancy Smith" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/xkNSWhfqQwVxSafY4rNpgdhjSEuBJVnsc8iu5Vv76GEyfhqnA.jpg" width="40"/>
+                        <img alt="Profile picture of Nancy Smith" class="rounded-full" height="40" src="images/irene-bae.jpg" width="40"/>
                         <div>
-                            <p class="font-bold">Who am I?</p>
-                            <p class="text-sm">CMO, ASC Group</p>
+                            <p class="font-bold">Irene Bae</p>
+                            <p class="text-sm">CFO, ASC Group</p>
                         </div>
                     </div>
                 </div>
                 <div class="bg-green-200 text-gray-800 p-4 rounded-lg w-1/3 min-w-[300px]">
                     <p class="mb-4">We run our entire creative process on Air, from planning our social posts to deciding what assets to use for an ad campaign.</p>
                     <div class="flex items-center space-x-2">
-                        <img alt="Profile picture of Cody Levine" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/QV9SmITbFTLBGZObeAjg3dlqUfg1tvBj8dheXfyL0i6RfHqeE.jpg" width="40"/>
+                        <img alt="Profile picture of Cody Levine" class="rounded-full" height="40" src="images/tiffany-young.jpg" width="40"/>
                         <div>
-                            <p class="font-bold">Hehe</p>
-                            <p class="text-sm">Co-Founder, ASC Group</p>
+                            <p class="font-bold">Tiffany Young</p>
+                            <p class="text-sm">COO, ASC Group</p>
                         </div>
                     </div>
                 </div>
@@ -224,23 +225,26 @@
             </div>
             <div class="overflow-x-auto scrolling-wrapper">
                 <div class="flex flex-wrap">
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
-                    <img alt="Company logo" height="40" src="https://storage.googleapis.com/a1aa/image/YikjaevEbtSARKBftoRzUcT2aPR3c1quy7HKAEC1hoEzfhqnA.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/st.lukes_logo.jpg".jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/san-lazaro_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/metropolitan_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/philippine-general_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/riverside_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/queen-of-mercy_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/doctors_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/harvard_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/oxford_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/up-diliman_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/cambridge_logo.jpg" width="100"/>
+                    <img alt="Company logo" height="40" src="images/mit_logo.jpg" width="100"/>
                 </div>
             </div>
         </div>
         <div class="lg:w-1/3 p-8 bg-gray-100 h-screen">
             <div class="flex items-center space-x-4 mb-4">
-                <img alt="Profile picture of Aelaighne Yu" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/xkaO0XRpKHauBtISVmuiYbao5jUp17t1sxhGoIcWC219PU9E.jpg" width="40"/>
+                <img alt="Profile picture of Aelaighne Yu" class="rounded-full" height="40" src="images/yerim-kim.jpg" width="40"/>
                 <div>
-                    <p class="font-bold">Aelaighne Yu (Nurse, St. Lukes)</p>
+                    <p class="font-bold">Yerim Kim (Nurse, St. Lukes)</p>
                 </div>
                 <div class="relative">
                     <i class="fas fa-ellipsis-v text-gray-600 cursor-pointer" onclick="toggleDropdown()"></i>
@@ -476,6 +480,7 @@
             border: none;
             border-radius: 4px 0 0 4px;
             font-size: 14px;
+            color: #07225c;
         }
         
         .newsletter button {
