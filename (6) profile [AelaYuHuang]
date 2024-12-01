@@ -184,10 +184,10 @@
       </div>
       <div class="p-4">
         <div class="flex items-center space-x-4 mb-4">
-          <img alt="Profile picture of user" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/rhQxUEJ2jY4LP1yLsAAPeTUdKfFXCiUonbaMCzhdR4GMBl2TA.jpg" width="100"/>
+          <img alt="Profile picture of user" class="rounded-full" height="100" src="images/ange-uy.jpg" width="100"/>
           <div>
-            <h3 class="text-xl font-bold">John Doe</h3>
-            <p class="text-gray-600">@johndoe</p>
+            <h3 class="text-xl font-bold">Aela Yu</h3>
+            <p class="text-gray-600">@ange_yuu</p>
           </div>
         </div>
         <div class="mb-4">
@@ -195,19 +195,19 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label class="block text-gray-600">Full Name</label>
-              <input class="w-full p-2 border rounded" type="text" value="John Doe"/>
+              <input class="w-full p-2 border rounded" type="text" value="Aelaighne Yu"/>
             </div>
             <div>
               <label class="block text-gray-600">Subscription Plan</label>
-              <input class="w-full p-2 border rounded" type="text" value="Premium"/>
+              <input class="w-full p-2 border rounded" type="text" value="Premium: 1 Year"/>
             </div>
             <div>
               <label class="block text-gray-600">Home Address</label>
-              <input class="w-full p-2 border rounded" type="text" value="123 Main St, City, Country"/>
+              <input class="w-full p-2 border rounded" type="text" value="Secret..."/>
             </div>
             <div>
               <label class="block text-gray-600">School or Work Address</label>
-              <input class="w-full p-2 border rounded" type="text" value="456 Work St, City, Country"/>
+              <input class="w-full p-2 border rounded" type="text" value="University of St. La Salle-Bacolod"/>
             </div>
             <div>
               <label class="block text-gray-600">Mobile Number</label>
@@ -215,7 +215,7 @@
             </div>
             <div>
               <label class="block text-gray-600">Email Address</label>
-              <input class="w-full p-2 border rounded" type="email" value="john.doe@example.com"/>
+              <input class="w-full p-2 border rounded" type="email" value="angevuy@gmail.com"/>
             </div>
             <div>
               <label class="block text-gray-600">Health Background</label>
@@ -223,7 +223,7 @@
             </div>
             <div>
               <label class="block text-gray-600">Body Height and Weight</label>
-              <input class="w-full p-2 border rounded" type="text" value="180 cm, 75 kg"/>
+              <input class="w-full p-2 border rounded" type="text" value="180 cm, 50 kg"/>
             </div>
             <div>
               <label class="block text-gray-600">Diagnosis</label>
@@ -237,7 +237,7 @@
             <h4 class="text-lg font-bold mb-2">Change Username</h4>
             <div>
               <label class="block text-gray-600">New Username</label>
-              <input class="w-full p-2 border rounded" type="text" value="johndoe"/>
+              <input class="w-full p-2 border rounded" type="text" value="ange_yuu"/>
             </div>
           </div>
           <div class="mb-4">
@@ -268,7 +268,7 @@
             <h4 class="text-lg font-bold mb-2">Change Email Address</h4>
             <div>
               <label class="block text-gray-600">New Email Address</label>
-              <input class="w-full p-2 border rounded" type="email" value="john.doe@example.com"/>
+              <input class="w-full p-2 border rounded" type="email" value="angevuy@gmail.com"/>
             </div>
           </div>
         </div>
@@ -278,54 +278,175 @@
       </div>
     </div>
   </main>
-  <footer class="site-footer">
+
+
+
+
+
+
+ 
+<footer class="site-footer">
     <div class="footer-content">
-      <div class="footer-section">
-        <h4>Product</h4>
-        <ul>
-          <li><a href="#">Customers</a></li>
-          <li><a href="#">Plan</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">Our Mission</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Partners</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Developer Guides</a></li>
-          <li><a href="#">WellWeb Academy</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>More</h4>
-        <ul>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
+
+        <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Plan</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Partners</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Developer Guides</a></li>
+            <li><a href="#">WellWeb Academy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>More</h4>
+            <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit" ><i class="fas fa-arrow-right"></i> </button>
+            </div>
+
+        <div class="footer-bottom">
+        
+        <p>&copy; 2024 WellWeb by: AngeSpensClar Group < 3 | All rights reserved.</p>
+
     </div>
-    <div class="social-links">
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="newsletter">
-      <input type="email" placeholder="Enter your email" />
-      <button type="submit"><i class="fas fa-arrow-right"></i></button>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 WellWeb by: AngeSpensClar Group < 3 | All rights reserved.</p>
-    </div>
-  </footer>
+</footer>
+
+<style>
+.site-footer {
+    background-color: #07225c;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+    
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+        
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+        
+        .footer-section h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #3498db;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .social-icon {
+            color: #fff;
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            color: #3498db;
+        }
+        
+        .newsletter {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .newsletter input {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 14px;
+            color: #07225c;
+        }
+        
+        .newsletter button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .newsletter button:hover {
+            background-color: #2980b9;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+        }
+</style>
+
 </body>
 </html>
