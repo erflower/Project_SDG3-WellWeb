@@ -1,1 +1,215 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Emergency Call - WellWeb
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .calling-screen {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .calling-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+  </style>
+ </head>
+ <body class="bg-white">
+  <header class="flex justify-between items-center p-4 border-b border-gray-200">
+   <div class="flex items-center space-x-4">
+    <h1 class="text-2xl font-bold text-blue-600">
+     WellWeb
+    </h1>
+    <nav class="space-x-4">
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      About Us
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      Home
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      Account
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      Plan
+     </a>
+    </nav>
+   </div>
+   <button class="bg-blue-600 text-white px-4 py-2 rounded">
+    Log-out
+   </button>
+  </header>
+  <main class="p-8">
+   <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="bg-red-600 p-4">
+     <h2 class="text-2xl font-bold text-white">
+      Emergency
+     </h2>
+    </div>
+    <div class="p-4 text-center">
+     <button class="bg-red-600 text-white px-4 py-2 rounded text-xl" onclick="showModal()">
+      Start Emergency Call
+     </button>
+    </div>
+   </div>
+   <div class="modal" id="emergencyModal">
+    <div class="modal-content">
+     <h2 class="text-2xl font-bold mb-4">
+      Emergency Call
+     </h2>
+     <p class="mb-4">
+      Calling in <span id="countdown">5</span> seconds...
+     </p>
+     <button class="bg-gray-600 text-white px-4 py-2 rounded" onclick="cancelCall()">
+      Cancel
+     </button>
+    </div>
+   </div>
+   <div class="calling-screen" id="callingScreen">
+    <div class="calling-content">
+     <h2 class="text-2xl font-bold mb-4">
+      Calling Emergency Responders...
+     </h2>
+     <p class="mb-4">
+      Please wait while we connect you to the nearest emergency responders.
+     </p>
+    </div>
+   </div>
+   <div class="mt-8">
+    <h3 class="text-xl font-bold mb-4">
+     Your Current Location
+    </h3>
+    <div id="map" class="w-full h-64 bg-gray-200">
+    </div>
+   </div>
+   <div class="mt-8">
+    <h3 class="text-xl font-bold mb-4">
+     Nearest Hospitals
+    </h3>
+    <ul id="hospitals-list" class="list-disc pl-5">
+    </ul>
+   </div>
+   <div class="mt-8">
+    <h3 class="text-xl font-bold mb-4">
+     Responders Information
+    </h3>
+    <div id="responders-info" class="bg-gray-100 p-4 rounded-lg">
+    </div>
+   </div>
+   <div class="mt-8">
+    <h3 class="text-xl font-bold mb-4">
+     Responders Real-Time Location
+    </h3>
+    <div id="responders-map" class="w-full h-64 bg-gray-200">
+    </div>
+   </div>
+  </main>
+  <footer class="p-4 border-t border-gray-200">
+   <div class="text-center text-gray-600">
+    © 2023 WellWeb. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   let countdownInterval;
 
+        function showModal() {
+            const modal = document.getElementById('emergencyModal');
+            modal.style.display = 'block';
+            let countdown = 5;
+            document.getElementById('countdown').innerText = countdown;
+            countdownInterval = setInterval(() => {
+                countdown--;
+                document.getElementById('countdown').innerText = countdown;
+                if (countdown === 0) {
+                    clearInterval(countdownInterval);
+                    proceedToCall();
+                }
+            }, 1000);
+        }
+
+        function cancelCall() {
+            clearInterval(countdownInterval);
+            const modal = document.getElementById('emergencyModal');
+            modal.style.display = 'none';
+        }
+
+        function proceedToCall() {
+            const modal = document.getElementById('emergencyModal');
+            modal.style.display = 'none';
+            const callingScreen = document.getElementById('callingScreen');
+            callingScreen.style.display = 'block';
+            // Simulate calling and fetching data
+            setTimeout(() => {
+                callingScreen.style.display = 'none';
+                showRespondersInfo();
+            }, 3000);
+        }
+
+        function showRespondersInfo() {
+            const respondersInfo = document.getElementById('responders-info');
+            respondersInfo.innerHTML = `
+                <p><strong>Name:</strong> Dr. Jane Smith</p>
+                <p><strong>Background:</strong> Experienced emergency responder with 10 years of service.</p>
+            `;
+            // Simulate showing responders' real-time location
+            const respondersMap = document.getElementById('responders-map');
+            respondersMap.innerHTML = '<p>Responders are on their way...</p>';
+        }
+
+        // Simulate fetching user's current location and nearest hospitals
+        function initMap() {
+            const map = document.getElementById('map');
+            map.innerHTML = '<p>Your current location is being tracked...</p>';
+            const hospitalsList = document.getElementById('hospitals-list');
+            hospitalsList.innerHTML = `
+                <li>Hospital A - 1.2 km away</li>
+                <li>Hospital B - 2.5 km away</li>
+                <li>Hospital C - 3.1 km away</li>
+            `;
+        }
+
+        window.onload = initMap;
+  </script>
+ </body>
+</html>
