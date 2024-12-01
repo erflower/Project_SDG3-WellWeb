@@ -427,6 +427,7 @@
             border: none;
             border-radius: 4px 0 0 4px;
             font-size: 14px;
+            color: #07225c;
         }
         
         .newsletter button {
@@ -448,7 +449,6 @@
             margin-top: 40px;
         }
 </style>
-
 
 
 
@@ -497,37 +497,66 @@
             modal.style.display = 'none';
             const callingScreen = document.getElementById('callingScreen');
             callingScreen.style.display = 'block';
-            // Simulate calling and fetching data
+
+
+
+
+
+
+
+
+
             setTimeout(() => {
                 callingScreen.style.display = 'none';
                 showRespondersInfo();
             }, 3000);
         }
 
+
+
+
+
+
+
+
+
+
         function showRespondersInfo() {
             const respondersInfo = document.getElementById('responders-info');
             respondersInfo.innerHTML = `
-                <p><strong>Name:</strong> Dr. Jane Smith</p>
+                <p><strong>Name:</strong> Dr. Ange Yu</p>
                 <p><strong>Background:</strong> Experienced emergency responder with 10 years of service.</p>
             `;
-            // Simulate showing responders' real-time location
+
+
+
+
+
+
             const respondersMap = document.getElementById('responders-map');
             respondersMap.innerHTML = '<p>Responders are on their way...</p>';
         }
 
-        // Simulate fetching user's current location and nearest hospitals
+
+
+
+
+
+
+
         function initMap() {
             const map = document.getElementById('map');
             map.innerHTML = '<p>Your current location is being tracked...</p>';
             const hospitalsList = document.getElementById('hospitals-list');
             hospitalsList.innerHTML = `
-                <li>Hospital A - 1.2 km away</li>
-                <li>Hospital B - 2.5 km away</li>
-                <li>Hospital C - 3.1 km away</li>
+                <li>Doctors Hospital - 1.2 km away</li>
+                <li>Riverside Medical Center - 2.5 km away</li>
+                <li>Queen of Mercy - 3.1 km away</li>
             `;
         }
 
         window.onload = initMap;
   </script>
+
  </body>
 </html>
