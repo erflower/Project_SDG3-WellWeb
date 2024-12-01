@@ -220,7 +220,7 @@
                     <p class="text-lg font-bold">FOR EMERGENCY</p>
                 </div>
                 <p class="text-center text-xl font-bold">
-                    <a href="emergency.php">Start Emergency Call →</a>
+                    <a href="emergency-call.html">Start Emergency Call →</a>
                 </p>
             </div>
             <div class="overflow-x-auto scrolling-wrapper">
