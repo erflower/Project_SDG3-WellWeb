@@ -22,6 +22,139 @@
 
 
 
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .site-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #333;
+                color: #fff;
+            }
+            .site-header a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .main-nav ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+            .main-nav li {
+                margin: 0 10px;
+            }
+            .btn-primary {
+                padding: 5px 10px;
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                text-decoration: none;
+            }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            text-align: left;
+            position: relative;
+            overflow-y: auto;
+            max-height: 90%;
+        }
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff5f5f;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 16px;
+            line-height: 1;
+        }
+        .modal-header h2 {
+            margin: 0;
+        }
+        .modal-body ul {
+            padding-left: 20px;
+        }
+        .modal-team {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team-member {
+            text-align: center;
+            width: 150px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
     <header class="site-header">
         <div class="logo">
             <a href="#">WellWeb</a>
@@ -30,15 +163,136 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#" id="aboutUsLink">About Us</a></li>
                 <li><a href="profile.html">Account</a></li>
             </ul>
         </nav>
-                <div class="user-actions">
-                <a href="index_log-in.html" class="btn btn-primary">Log-out</a>
-                </div>
+        <div class="user-actions">
+            <a href="index_log-in.html" class="btn btn-primary">Log-out</a>
+        </div>
     </header>
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="about-us-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>About WellWeb</h2>
+            </div>
+            <div class="modal-body">
+                <p>WellWeb is a dynamic digital solutions company dedicated to empowering businesses through innovative web technologies. Founded in 2024 by a group of passionate tech enthusiasts, our mission is to provide cutting-edge web solutions that drive growth and efficiency.</p>
+                
+                <h3>Our Story</h3>
+                <p>What started as a small startup in a garage has grown into a robust platform serving businesses worldwide. Our journey began with a simple idea: to make powerful web tools accessible to everyone, regardless of their technical expertise.</p>
+                
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Innovation:</strong> We constantly push the boundaries of what's possible.</li>
+                    <li><strong>Integrity:</strong> We believe in transparent and ethical business practices.</li>
+                    <li><strong>Customer-Centric:</strong> Your success is our primary goal.</li>
+                </ul>
+
+                <h3>Our Team</h3>
+                <div class="modal-team">
+                    <div class="team-member">
+                        <img src="/api/placeholder/150/150" alt="Team Member 1">
+                        <h3>Angela Smith</h3>
+                        <p>Co-Founder & CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/api/placeholder/150/150" alt="Team Member 2">
+                        <h3>Spencer Jones</h3>
+                        <p>CTO & Technical Lead</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/api/placeholder/150/150" alt="Team Member 3">
+                        <h3>Clara Rodriguez</h3>
+                        <p>Head of Product Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Get elements
+        const aboutUsLink = document.getElementById('aboutUsLink');
+        const aboutUsModal = document.getElementById('about-us-modal');
+        const closeModal = document.querySelector('.modal-close');
+
+        // Show modal when "About Us" link is clicked
+        aboutUsLink.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            aboutUsModal.style.display = 'flex'; // Show the modal
+        });
+
+        // Close modal when close button is clicked
+        closeModal.addEventListener('click', function () {
+            aboutUsModal.style.display = 'none'; // Hide
+        });
+
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', function (e) {
+            if (e.target === aboutUsModal) {
+                aboutUsModal.style.display = 'none'; // Hide
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <style>
         .site-header {
             display: flex;
