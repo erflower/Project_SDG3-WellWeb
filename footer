@@ -91,7 +91,8 @@
                         display: flex;
                         justify-content: space-between;
                         max-width: 1200px;
-                        margin: 0 auto;
+                        margin-top: 30px;
+                        margin-left: 50px;
                     }
                             
                     .footer-section {
@@ -172,5 +173,6 @@
                     .footer-bottom {
                         text-align: center;
                         margin-top: 40px;
+                        margin-bottom: 30px;
                     }
                 </style>
